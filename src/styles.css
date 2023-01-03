@@ -66,6 +66,21 @@ main {
 
 .main-message-area {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   background-color: white;
+  gap: 10px;
+  padding-left: 13%;
+}
+
+#big-text-for-burger {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+  width: 70%;
+}
+
+#small-text-for-burger {
+  width: 60%;
 }
