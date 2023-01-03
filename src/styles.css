@@ -1,3 +1,4 @@
+/* global styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +10,7 @@ body {
   width: 100vw;
 }
 
+/* styling of header start*/
 header {
   display: flex;
   flex-direction: column;
@@ -34,7 +36,9 @@ nav {
   color: white;
   font-weight: bold;
 }
+/* styling of header END */
 
+/* styling of main START */
 main {
   width: 100%;
   height: 100%;
