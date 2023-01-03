@@ -88,3 +88,12 @@ main {
 #small-text-for-burger {
   width: 60%;
 }
+
+.item-list-container{
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
