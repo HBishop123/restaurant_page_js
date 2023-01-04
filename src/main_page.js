@@ -375,6 +375,7 @@ const mainPage = function mainPage() {
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
     textTwoContainer.appendChild(smallText);
+    // creating the text box area for the text and header text END
   })();
 };
 mainPage();
