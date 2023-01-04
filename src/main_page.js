@@ -277,5 +277,57 @@ const mainPage = function mainPage() {
     beverageContainer.appendChild(beverageText);
     // creating Beverage Option end
   })();
+
+  (function createAndStyleLayerOne() {
+    const mainSectionContainer = document.querySelector(".main-container");
+    // creating the text box area for the text and header text
+    const textOne = document.createElement("div");
+    textOne.style.height = "100%";
+    textOne.style.width = "100%";
+    textOne.style.gridColumn = "1/2";
+    textOne.style.gridRow = "3/4";
+    textOne.style.backgroundColor = "white";
+    textOne.style.display = "flex";
+    textOne.style.justifyContent = "center";
+    textOne.style.flexDirection = "column";
+    textOne.style.gap = "10px";
+    textOne.style.paddingLeft = "13%";
+    mainSectionContainer.appendChild(textOne);
+
+    const bigText = document.createElement("p");
+    bigText.innerText = "We're bringing the heat to the streets.";
+    bigText.style.color = "red";
+    bigText.style.fontWeight = "bold";
+    bigText.style.fontSize = "50px";
+    bigText.style.width = "70%";
+    bigText.style.fontFamily = "'Asap', sans-serif";
+    textOne.appendChild(bigText);
+
+    const smallText = document.createElement("p");
+    smallText.innerText =
+      "Fancy a burger that's freshly made, not pre-made? That was rehtorical... of course you do! We're now open! Find us all across the globe!";
+    smallText.style.width = "60%";
+    smallText.style.fontSize = "16px";
+    smallText.style.fontFamily = "'Roboto', sans-serif";
+    textOne.appendChild(smallText);
+    // creating the text box area for the text and header text END
+
+    // creating the adjacent area for the image
+    const imageOneContainer = document.createElement("div");
+    imageOneContainer.style.height = "100%";
+    imageOneContainer.style.width = "100%";
+    imageOneContainer.style.gridColumn = "2/3";
+    imageOneContainer.style.gridRow = "3/4";
+    imageOneContainer.style.backgroundColor = "white";
+    mainSectionContainer.appendChild(imageOneContainer);
+
+    const imageOne = document.createElement("img");
+    imageOne.src = "/images/chicken.png";
+    imageOne.alt = "Spicy Chicken Nuggets";
+    imageOne.style.width = "100%";
+    imageOne.style.height = "450px";
+    imageOneContainer.appendChild(imageOne);
+    // creating the adjacent area for the image END
+  })();
 };
 mainPage();
