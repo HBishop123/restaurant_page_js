@@ -448,5 +448,48 @@ const mainPage = function mainPage() {
     imageThreeContainer.appendChild(imageThree);
     // creating the area for the image end
   })();
+
+  (function createAndStyleFooter() {
+    // creating & styling footer
+    const body = document.querySelector("body");
+    const footer = document.createElement("footer");
+    footer.style.height = "50px";
+    footer.style.backgroundColor = "#b0171f";
+    body.appendChild(footer);
+
+    // creating & styling contact 'p'
+    const contact = document.createElement("p");
+    contact.innerText = "Contact Us";
+    contact.fontSize = "1.2em";
+    contact.style.paddingLeft = "5px";
+    footer.appendChild(contact);
+
+    // creating and styling ul of footer links
+    const list = document.createElement("ul");
+    list.style.display = "flex";
+    list.style.flexDirection = "row";
+    list.style.gap = "50px";
+    list.style.listStyle = "none";
+    list.style.justifyContent = "flex-start";
+    list.style.alignItems = "center";
+    list.style.paddingLeft = "5px";
+    footer.appendChild(list);
+
+    const cookies = document.createElement("li");
+    cookies.innerText = "Cookies and Tracking";
+    list.appendChild(cookies);
+
+    const privacyPolicy = document.createElement("li");
+    privacyPolicy.innerText = "Privacy Policy";
+    list.appendChild(privacyPolicy);
+
+    const managePrivacy = document.createElement("li");
+    managePrivacy.innerText = "Manage Privacy Preferences";
+    list.appendChild(managePrivacy);
+
+    const tax = document.createElement("li");
+    tax.innerText = "Tax Strategy";
+    list.appendChild(tax);
+  })();
 };
 mainPage();
