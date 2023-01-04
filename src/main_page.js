@@ -52,5 +52,17 @@ const mainPage = function mainPage() {
     navigation.style.color = "white";
     navigation.style.fontWeight = "bold";
     navigation.style.fontFamily = "'Roboto,' sans-serif";
+    document.header.appendChild(navigation);
+
+    const menuP = document.createElement("p");
+    const companyP = document.createElement("p");
+    const jobsP = document.createElement("p");
+    menuP.textContent = "Menu";
+    companyP.textContent = "Company";
+    jobsP.textContent = "Jobs";
+
+    document.navigation.appendChild(menuP);
+    document.navigation.appendChild(companyP);
+    document.navigation.appendChild(jobsP);
   })();
 };
