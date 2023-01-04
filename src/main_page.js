@@ -113,7 +113,6 @@ const mainPage = (function mainPage() {
     mainContainerText.style.width = "100%";
     mainContainerText.style.backgroundColor = "white";
     mainContainerText.style.gap = "10px";
-    mainContainerText.style.paddingLeft = "13%";
     mainSectionContainer.appendChild(mainContainerText);
 
     const bigText = document.createElement("p");
