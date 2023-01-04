@@ -1,20 +1,21 @@
 // function to create page
-const mainPage = function mainPage() {
+const mainPage = (function mainPage() {
   // Div that all content will be placed under
   const allContent = document.getElementById("content");
 
   (() => {
     // function to style both the body and *
-    const everything = document.querySelector("*");
+    const everything = document.querySelectorAll("*");
     const body = document.querySelector("body");
 
-    everything.style.boxSizing = "border-box";
-    everything.style.margin = "0";
-    everything.style.padding = "0";
-
+    for (let i = 0; i < everything.length; i++) {
+      const allElemenets = everything[i];
+      allElemenets.style.boxSizing = "border-box";
+      allElemenets.style.margin = "0px";
+      allElemenets.style.padding = "0px";
+    }
     body.style.height = "100%";
     body.style.width = "100%";
-
     document.body.appendChild(allContent);
   })();
 
@@ -164,6 +165,7 @@ const mainPage = function mainPage() {
     veggieText.innerText = "Veggie Options";
     veggieText.style.fontSize = "16px";
     veggieText.style.fontFamily = "'Roboto', sans-serif";
+    veggieText.style.margin = "0px";
     veggieContainer.appendChild(veggieText);
     // creating Veggie Option end
 
@@ -179,13 +181,14 @@ const mainPage = function mainPage() {
     breakfastImage.src = "/images/brekfast.png";
     breakfastImage.alt = "Breakfast Burger Options";
     breakfastImage.style.width = "80px";
-    breakfastImage.style.width = "80px";
+    breakfastImage.style.height = "80px";
     breakfastContainer.appendChild(breakfastImage);
 
     const breakfastText = document.createElement("p");
     breakfastText.innerText = "Breakfast Combos";
     breakfastText.style.fontSize = "16px";
     breakfastText.style.fontFamily = "'Roboto', sans-serif";
+    breakfastText.style.margin = "0px";
     breakfastContainer.appendChild(breakfastText);
     // creating Breakfast Option end
 
@@ -208,6 +211,7 @@ const mainPage = function mainPage() {
     saladText.innerText = "Fresh-Made Salads";
     saladText.style.fontSize = "16px";
     saladText.style.fontFamily = "'Roboto', sans-serif";
+    saladText.style.margin = "0px";
     saladContainer.appendChild(saladText);
     // creating Salad Option end
 
@@ -230,6 +234,7 @@ const mainPage = function mainPage() {
     sandwichText.innerText = "Sandwiches";
     sandwichText.style.fontSize = "16px";
     sandwichText.style.fontFamily = "'Roboto', sans-serif";
+    sandwichText.style.margin = "0px";
     sandwichContainer.appendChild(sandwichText);
     // creating Sandwich Option end
 
@@ -252,6 +257,7 @@ const mainPage = function mainPage() {
     sidesText.innerText = "Fries & Sides";
     sidesText.style.fontSize = "16px";
     sidesText.style.fontFamily = "'Roboto', sans-serif";
+    sidesText.style.margin = "0px";
     sidesContainer.appendChild(sidesText);
     // creating Fries & Sides Option end
 
@@ -274,6 +280,7 @@ const mainPage = function mainPage() {
     beverageText.innerText = "Beverages";
     beverageText.style.fontSize = "16px";
     beverageText.style.fontFamily = "'Roboto', sans-serif";
+    beverageText.style.margin = "0px";
     beverageContainer.appendChild(beverageText);
     // creating Beverage Option end
   })();
@@ -356,7 +363,6 @@ const mainPage = function mainPage() {
     textTwoContainer.style.justifyContent = "center";
     textTwoContainer.style.flexDirection = "column";
     textTwoContainer.style.gap = "10px";
-    textTwoContainer.style.paddingLeft = "13%";
     mainSectionContainer.appendChild(textTwoContainer);
 
     const bigText = document.createElement("p");
@@ -366,6 +372,7 @@ const mainPage = function mainPage() {
     bigText.style.fontSize = "50px";
     bigText.style.width = "70%";
     bigText.style.fontFamily = "'Asap', sans-serif";
+    bigText.style.paddingLeft = "13%";
     textTwoContainer.appendChild(bigText);
 
     const smallText = document.createElement("p");
@@ -374,6 +381,7 @@ const mainPage = function mainPage() {
     smallText.style.width = "60%";
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
+    smallText.style.paddingLeft = "13%";
     textTwoContainer.appendChild(smallText);
     // creating the text box area for the text and header text END
   })();
@@ -388,7 +396,6 @@ const mainPage = function mainPage() {
     textThreeContainer.style.display = "flex";
     textThreeContainer.style.justifyContent = "center";
     textThreeContainer.style.flexDirection = "column";
-    textThreeContainer.style.gap = "10px";
     textThreeContainer.style.paddingLeft = "13%";
     mainSectionContainer.appendChild(textThreeContainer);
 
@@ -425,8 +432,9 @@ const mainPage = function mainPage() {
     textThreeContainer.appendChild(smallTextThree);
 
     const smallTextFour = document.createElement("p");
-    smallTextFour.innerText =
-      "Discover how we can help you grow your career HERE";
+    smallTextFour.innerHTML =
+      "Discover how we can help you grow your career here.";
+
     smallTextFour.style.width = "60%";
     smallTextFour.style.fontSize = "16px";
     smallTextFour.style.fontFamily = "'Roboto', sans-serif";
@@ -455,13 +463,16 @@ const mainPage = function mainPage() {
     const footer = document.createElement("footer");
     footer.style.height = "50px";
     footer.style.backgroundColor = "#b0171f";
+    footer.style.margin = "0px";
+    footer.style.padding = "0px";
     body.appendChild(footer);
 
     // creating & styling contact 'p'
     const contact = document.createElement("p");
     contact.innerText = "Contact Us";
-    contact.fontSize = "1.2em";
+    contact.style.fontFamily = "Roboto, sans-serif";
     contact.style.paddingLeft = "5px";
+    contact.style.margin = "0px";
     footer.appendChild(contact);
 
     // creating and styling ul of footer links
@@ -473,23 +484,29 @@ const mainPage = function mainPage() {
     list.style.justifyContent = "flex-start";
     list.style.alignItems = "center";
     list.style.paddingLeft = "5px";
+    list.style.margin = "0px";
     footer.appendChild(list);
 
     const cookies = document.createElement("li");
     cookies.innerText = "Cookies and Tracking";
+    cookies.style.fontFamily = "'Roboto', sans-serif";
     list.appendChild(cookies);
 
     const privacyPolicy = document.createElement("li");
     privacyPolicy.innerText = "Privacy Policy";
+    privacyPolicy.style.fontFamily = "'Roboto', sans-serif";
     list.appendChild(privacyPolicy);
 
     const managePrivacy = document.createElement("li");
     managePrivacy.innerText = "Manage Privacy Preferences";
+    managePrivacy.style.fontFamily = "'Roboto', sans-serif";
     list.appendChild(managePrivacy);
 
     const tax = document.createElement("li");
     tax.innerText = "Tax Strategy";
+    tax.style.fontFamily = "'Roboto', sans-serif";
     list.appendChild(tax);
   })();
-};
-mainPage();
+})();
+
+export default mainPage;
