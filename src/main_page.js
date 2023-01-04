@@ -226,7 +226,27 @@ const mainPage = function mainPage() {
     sandwichContainer.appendChild(sandwichText);
     // creating Sandwich Option end
 
-    
+    // creating Fries & Sides Option start
+    const sidesContainer = document.createElement("div");
+    sidesContainer.style.display = "flex";
+    sidesContainer.style.flexDirection = "column";
+    sidesContainer.style.alignItems = "center";
+    sidesContainer.style.justifyContent = "center";
+    foodListContainer.appendChild(sidesContainer);
+
+    const sidesImage = document.createElement("img");
+    sidesImage.src = "/images/fries.png";
+    sidesImage.alt = "Side Options";
+    sidesImage.style.width = "80px";
+    sidesImage.style.height = "80px";
+    sidesContainer.appendChild(sidesImage);
+
+    const sidesText = document.createElement("p");
+    sidesText.innerText = "Fries & Sides";
+    sidesText.style.fontSize = "16px";
+    sidesText.style.fontFamily = "'Roboto', sans-serif";
+    sidesContainer.appendChild(sidesText);
+    // creating Fries & Sides Option end
   })();
 };
 mainPage();
