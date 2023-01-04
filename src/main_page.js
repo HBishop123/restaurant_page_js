@@ -129,5 +129,58 @@ const mainPage = function mainPage() {
 
   (function createFoodList() {
     const mainSectionContainer = document.querySelector(".main-container");
+    const foodListContainer = document.createElement("div");
+    foodListContainer.style.gridColumn = "1/3";
+    foodListContainer.style.display = "flex";
+    foodListContainer.style.flexDirection = "row";
+    foodListContainer.style.gap = "20px";
+    foodListContainer.style.alignItems = "center";
+    foodListContainer.style.justifyContent = "space-around";
+    mainSectionContainer.appendChild(foodListContainer);
+
+    // creating Veggie Option listing start
+    const veggieContainer = document.createElement("div");
+    veggieContainer.style.display = "flex";
+    veggieContainer.style.flexDirection = "column";
+    veggieContainer.style.alignItems = "center";
+    veggieContainer.style.justifyContent = "center";
+    foodListContainer.appendChild(veggieContainer);
+
+    const veggieImage = document.createElement("img");
+    veggieImage.src = "/images/veggie.png";
+    veggieImage.alt = "Veggie Burger";
+    veggieImage.style.width = "80px";
+    veggieImage.style.height = "80px";
+    veggieContainer.appendChild(veggieImage);
+
+    const veggieText = document.createElement("p");
+    veggieText.innerText = "Veggie Options";
+    veggieText.style.fontSize = "16px";
+    veggieText.style.fontFamily = "'Roboto', sans-serif";
+    veggieContainer.appendChild(veggieText);
+    // creating Veggie Option listing end
+
+    // creating Breakfast Option start
+    const breakfastContainer = document.createElement("div");
+    breakfastContainer.style.display = "flex";
+    breakfastContainer.style.flexDirection = "column";
+    breakfastContainer.style.alignItems = "center";
+    breakfastContainer.style.justifyContent = "center";
+    foodListContainer.appendChild(breakfastContainer);
+
+    const breakfastImage = document.createElement("img");
+    breakfastImage.src = "/images/brekfast.png";
+    breakfastImage.alt = "Breakfast Burger Options";
+    breakfastImage.style.width = "80px";
+    breakfastImage.style.width = "80px";
+    breakfastContainer.appendChild(breakfastImage);
+
+    const breakfastText = document.createElement("p");
+    breakfastText.innerText = "Breakfast Combos";
+    breakfastText.style.fontSize = "16px";
+    breakfastText.style.fontFamily = "'Roboto', sans-serif";
+    breakfastContainer.appendChild(breakfastText);
+    // creating Breakfast Option end
   })();
 };
+mainPage();
