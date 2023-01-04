@@ -202,6 +202,31 @@ const mainPage = function mainPage() {
     saladText.style.fontSize = "16px";
     saladText.style.fontFamily = "'Roboto', sans-serif";
     saladContainer.appendChild(saladText);
+    // creating Salad Option end
+
+    // creating Sandwich Option start
+    const sandwichContainer = document.createElement("div");
+    sandwichContainer.style.display = "flex";
+    sandwichContainer.style.flexDirection = "column";
+    sandwichContainer.style.alignItems = "center";
+    sandwichContainer.style.justifyContent = "center";
+    foodListContainer.appendChild(sandwichContainer);
+
+    const sandwichImage = document.createElement("img");
+    sandwichImage.src = "/images/sandwich.png";
+    sandwichImage.alt = "Sandwich Options";
+    sandwichImage.style.width = "80px";
+    sandwichImage.style.height = "80px";
+    sandwichContainer.appendChild(sandwichImage);
+
+    const sandwichText = document.createElement("p");
+    sandwichText.innerText = "Sandwiches";
+    sandwichText.style.fontSize = "16px";
+    sandwichText.style.fontFamily = "'Roboto', sans-serif";
+    sandwichContainer.appendChild(sandwichText);
+    // creating Sandwich Option end
+
+    
   })();
 };
 mainPage();
