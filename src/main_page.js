@@ -1,7 +1,10 @@
+// function to create page
 const mainPage = function mainPage() {
+  // Div that all content will be placed under
   const allContent = document.getElementById("content");
 
   (() => {
+    // function to style both the body and *
     const everything = document.querySelector("*");
     const body = document.querySelector("body");
 
@@ -15,6 +18,7 @@ const mainPage = function mainPage() {
     document.body.appendChild(allContent);
   })();
 
+  // function that creates the pages header
   (function createHeader() {
     const header = document.createElement("header");
     header.style.display = "flex";
@@ -26,6 +30,7 @@ const mainPage = function mainPage() {
     allContent.appendChild(header);
   })();
 
+  // function that creates and appends content for the header
   (function headerContent() {
     const header = document.querySelector("header");
     const logo = document.createElement("div");
@@ -66,6 +71,7 @@ const mainPage = function mainPage() {
     navigation.appendChild(jobsP);
   })();
 
+  // function that both creates and appends content to the 'main' section of the page
   (function createMainSection() {
     const mainSection = document.createElement("main");
     mainSection.style.width = "100%";
@@ -127,6 +133,7 @@ const mainPage = function mainPage() {
     mainContainerText.appendChild(smallText);
   })();
 
+  // function that creates a list of different food options across the page
   (function createFoodList() {
     const mainSectionContainer = document.querySelector(".main-container");
     const foodListContainer = document.createElement("div");
