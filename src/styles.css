@@ -6,8 +6,8 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 /* styling of header start*/
@@ -53,7 +53,7 @@ main {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 300px 200px 200px 300px 200px;
+  grid-template-rows: 300px 100px 450px 450px 450px;
   border: 1px solid black;
 }
 
@@ -81,14 +81,14 @@ main {
   padding-left: 13%;
 }
 
-#big-text-for-burger {
+.big-text {
   color: red;
   font-weight: bold;
   font-size: 40px;
   width: 70%;
 }
 
-#small-text-for-burger {
+.small-text {
   width: 60%;
 }
 
@@ -115,4 +115,25 @@ main {
 
 #beverage{
     width: 100px;
+}
+
+.text-one{
+  height: 100%;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: white;
+}
+
+.image-one{
+  height: 100%;
+  width: 100%;
+  grid-column: 2 / 3 ;
+  grid-row: 3 / 4;
+  background-color: white;
+}
+
+#chicken-nuggets{
+  width: 100%;
+  height: 450px;
 }
