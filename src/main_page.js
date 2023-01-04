@@ -377,5 +377,76 @@ const mainPage = function mainPage() {
     textTwoContainer.appendChild(smallText);
     // creating the text box area for the text and header text END
   })();
+
+  (function createAndStyleLayerThree() {
+    const mainSectionContainer = document.querySelector(".main-container");
+    // creating the text box area for the text and header text
+    const textThreeContainer = document.createElement("div");
+    textThreeContainer.style.height = "100%";
+    textThreeContainer.style.width = "100%";
+    textThreeContainer.style.backgroundColor = "white";
+    textThreeContainer.style.display = "flex";
+    textThreeContainer.style.justifyContent = "center";
+    textThreeContainer.style.flexDirection = "column";
+    textThreeContainer.style.gap = "10px";
+    textThreeContainer.style.paddingLeft = "13%";
+    mainSectionContainer.appendChild(textThreeContainer);
+
+    const bigText = document.createElement("p");
+    bigText.innerText = "Real Food. Real Careers.";
+    bigText.style.color = "red";
+    bigText.style.fontWeight = "bold";
+    bigText.style.fontSize = "50px";
+    bigText.style.width = "70%";
+    bigText.style.fontFamily = "'Asap', sans-serif";
+    textThreeContainer.appendChild(bigText);
+
+    const smallTextOne = document.createElement("p");
+    smallTextOne.innerText = "Come and work for us!";
+    smallTextOne.style.width = "60%";
+    smallTextOne.style.fontSize = "16px";
+    smallTextOne.style.fontFamily = "'Roboto', sans-serif";
+    textThreeContainer.appendChild(smallTextOne);
+
+    const smallTextTwo = document.createElement("p");
+    smallTextTwo.innerText =
+      "For 50 years we've been serving up our world class burgers and have remained devoted to treating our employees fair and square. We offer flexibility. Fun. The feeling that you can just be you.";
+    smallTextTwo.style.width = "60%";
+    smallTextTwo.style.fontSize = "16px";
+    smallTextTwo.style.fontFamily = "'Roboto', sans-serif";
+    textThreeContainer.appendChild(smallTextTwo);
+
+    const smallTextThree = document.createElement("p");
+    smallTextThree.innerText =
+      "No zero-contract. No nonsense. Jobs and careers done right.";
+    smallTextThree.style.width = "60%";
+    smallTextThree.style.fontSize = "16px";
+    smallTextThree.style.fontFamily = "'Roboto', sans-serif";
+    textThreeContainer.appendChild(smallTextThree);
+
+    const smallTextFour = document.createElement("p");
+    smallTextFour.innerText =
+      "Discover how we can help you grow your career HERE";
+    smallTextFour.style.width = "60%";
+    smallTextFour.style.fontSize = "16px";
+    smallTextFour.style.fontFamily = "'Roboto', sans-serif";
+    textThreeContainer.appendChild(smallTextFour);
+    // creating the text box area for the text and header text end
+
+    // creating the area for the image
+    const imageThreeContainer = document.createElement("div");
+    imageThreeContainer.style.height = "100%";
+    imageThreeContainer.style.width = "100%";
+    imageThreeContainer.style.backgroundColor = "white";
+    mainSectionContainer.appendChild(imageThreeContainer);
+
+    const imageThree = document.createElement("img");
+    imageThree.src = "/images/happy-staff.png";
+    imageThree.alt = "picture of happy staff";
+    imageThree.style.width = "100%";
+    imageThree.style.height = "450px";
+    imageThreeContainer.appendChild(imageThree);
+    // creating the area for the image end
+  })();
 };
 mainPage();
