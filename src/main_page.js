@@ -123,6 +123,7 @@ const mainPage = (function mainPage() {
     bigText.style.fontSize = "50px";
     bigText.style.width = "70%";
     bigText.style.fontFamily = "'Asap', sans-serif";
+    bigText.style.margin = "0px";
     mainContainerText.appendChild(bigText);
 
     const smallText = document.createElement("p");
@@ -131,6 +132,7 @@ const mainPage = (function mainPage() {
     smallText.style.width = "60%";
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
+    smallText.style.margin = "0px";
     mainContainerText.appendChild(smallText);
   })();
 
@@ -308,6 +310,7 @@ const mainPage = (function mainPage() {
     bigText.style.fontSize = "50px";
     bigText.style.width = "70%";
     bigText.style.fontFamily = "'Asap', sans-serif";
+    bigText.style.margin = "0px";
     textOneContainer.appendChild(bigText);
 
     const smallText = document.createElement("p");
@@ -316,6 +319,7 @@ const mainPage = (function mainPage() {
     smallText.style.width = "60%";
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
+    smallText.style.margin = "0px";
     textOneContainer.appendChild(smallText);
     // creating the text box area for the text and header text END
 
@@ -373,6 +377,7 @@ const mainPage = (function mainPage() {
     bigText.style.width = "70%";
     bigText.style.fontFamily = "'Asap', sans-serif";
     bigText.style.paddingLeft = "13%";
+    bigText.style.margin = "0px";
     textTwoContainer.appendChild(bigText);
 
     const smallText = document.createElement("p");
@@ -382,6 +387,7 @@ const mainPage = (function mainPage() {
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
     smallText.style.paddingLeft = "13%";
+    smallText.style.margin = "0px";
     textTwoContainer.appendChild(smallText);
     // creating the text box area for the text and header text END
   })();
@@ -397,6 +403,7 @@ const mainPage = (function mainPage() {
     textThreeContainer.style.justifyContent = "center";
     textThreeContainer.style.flexDirection = "column";
     textThreeContainer.style.paddingLeft = "13%";
+    textThreeContainer.style.gap = "30px"
     mainSectionContainer.appendChild(textThreeContainer);
 
     const bigText = document.createElement("p");
@@ -406,6 +413,7 @@ const mainPage = (function mainPage() {
     bigText.style.fontSize = "50px";
     bigText.style.width = "70%";
     bigText.style.fontFamily = "'Asap', sans-serif";
+    bigText.style.margin = "0px";
     textThreeContainer.appendChild(bigText);
 
     const smallTextOne = document.createElement("p");
@@ -413,6 +421,7 @@ const mainPage = (function mainPage() {
     smallTextOne.style.width = "60%";
     smallTextOne.style.fontSize = "16px";
     smallTextOne.style.fontFamily = "'Roboto', sans-serif";
+    smallTextOne.style.margin = "0px";
     textThreeContainer.appendChild(smallTextOne);
 
     const smallTextTwo = document.createElement("p");
@@ -421,6 +430,7 @@ const mainPage = (function mainPage() {
     smallTextTwo.style.width = "60%";
     smallTextTwo.style.fontSize = "16px";
     smallTextTwo.style.fontFamily = "'Roboto', sans-serif";
+    smallTextTwo.style.margin = "0px";
     textThreeContainer.appendChild(smallTextTwo);
 
     const smallTextThree = document.createElement("p");
@@ -429,6 +439,7 @@ const mainPage = (function mainPage() {
     smallTextThree.style.width = "60%";
     smallTextThree.style.fontSize = "16px";
     smallTextThree.style.fontFamily = "'Roboto', sans-serif";
+    smallTextThree.style.margin = "0px";
     textThreeContainer.appendChild(smallTextThree);
 
     const smallTextFour = document.createElement("p");
@@ -438,6 +449,7 @@ const mainPage = (function mainPage() {
     smallTextFour.style.width = "60%";
     smallTextFour.style.fontSize = "16px";
     smallTextFour.style.fontFamily = "'Roboto', sans-serif";
+    smallTextFour.style.margin = "0px";
     textThreeContainer.appendChild(smallTextFour);
     // creating the text box area for the text and header text end
 
@@ -465,6 +477,8 @@ const mainPage = (function mainPage() {
     footer.style.backgroundColor = "#b0171f";
     footer.style.margin = "0px";
     footer.style.padding = "0px";
+    footer.style.display = "flex"
+    footer.style.flexDirection = "column"
     body.appendChild(footer);
 
     // creating & styling contact 'p'
@@ -473,6 +487,11 @@ const mainPage = (function mainPage() {
     contact.style.fontFamily = "Roboto, sans-serif";
     contact.style.paddingLeft = "5px";
     contact.style.margin = "0px";
+    contact.style.alignSelf = "center"
+    contact.style.margin = "2.5px 0px 2.5px 0px"
+    contact.style.fontWeight = "bold"
+    contact.style.fontSize = "1.1rem"
+    
     footer.appendChild(contact);
 
     // creating and styling ul of footer links
@@ -481,7 +500,7 @@ const mainPage = (function mainPage() {
     list.style.flexDirection = "row";
     list.style.gap = "50px";
     list.style.listStyle = "none";
-    list.style.justifyContent = "flex-start";
+    list.style.justifyContent = "center";
     list.style.alignItems = "center";
     list.style.paddingLeft = "5px";
     list.style.margin = "0px";
@@ -490,21 +509,25 @@ const mainPage = (function mainPage() {
     const cookies = document.createElement("li");
     cookies.innerText = "Cookies and Tracking";
     cookies.style.fontFamily = "'Roboto', sans-serif";
+    cookies.style.fontWeight = "bold"
     list.appendChild(cookies);
 
     const privacyPolicy = document.createElement("li");
     privacyPolicy.innerText = "Privacy Policy";
     privacyPolicy.style.fontFamily = "'Roboto', sans-serif";
+    privacyPolicy.style.fontWeight = "bold"
     list.appendChild(privacyPolicy);
 
     const managePrivacy = document.createElement("li");
     managePrivacy.innerText = "Manage Privacy Preferences";
     managePrivacy.style.fontFamily = "'Roboto', sans-serif";
+    managePrivacy.style.fontWeight = "bold"
     list.appendChild(managePrivacy);
 
     const tax = document.createElement("li");
     tax.innerText = "Tax Strategy";
     tax.style.fontFamily = "'Roboto', sans-serif";
+    tax.style.fontWeight = "bold"
     list.appendChild(tax);
   })();
 })();
