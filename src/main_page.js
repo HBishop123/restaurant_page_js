@@ -247,6 +247,28 @@ const mainPage = function mainPage() {
     sidesText.style.fontFamily = "'Roboto', sans-serif";
     sidesContainer.appendChild(sidesText);
     // creating Fries & Sides Option end
+
+    // creating Beverage Option Start
+    const beverageContainer = document.createElement("div");
+    beverageContainer.style.display = "flex";
+    beverageContainer.style.flexDirection = "column";
+    beverageContainer.style.alignItems = "center";
+    beverageContainer.style.justifyContent = "center";
+    foodListContainer.appendChild(beverageContainer);
+
+    const beverageImage = document.createElement("img");
+    beverageImage.src = "/images/drink.png";
+    beverageImage.alt = "Drink Options";
+    beverageImage.style.width = "100px";
+    beverageImage.style.height = "80px";
+    beverageContainer.appendChild(beverageImage);
+
+    const beverageText = document.createElement("p");
+    beverageText.innerText = "Beverages";
+    beverageText.style.fontSize = "16px";
+    beverageText.style.fontFamily = "'Roboto', sans-serif";
+    beverageContainer.appendChild(beverageText);
+    // creating Beverage Option end
   })();
 };
 mainPage();
