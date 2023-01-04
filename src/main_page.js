@@ -138,7 +138,7 @@ const mainPage = function mainPage() {
     foodListContainer.style.justifyContent = "space-around";
     mainSectionContainer.appendChild(foodListContainer);
 
-    // creating Veggie Option listing start
+    // creating Veggie Option start
     const veggieContainer = document.createElement("div");
     veggieContainer.style.display = "flex";
     veggieContainer.style.flexDirection = "column";
@@ -158,7 +158,7 @@ const mainPage = function mainPage() {
     veggieText.style.fontSize = "16px";
     veggieText.style.fontFamily = "'Roboto', sans-serif";
     veggieContainer.appendChild(veggieText);
-    // creating Veggie Option listing end
+    // creating Veggie Option end
 
     // creating Breakfast Option start
     const breakfastContainer = document.createElement("div");
@@ -181,6 +181,27 @@ const mainPage = function mainPage() {
     breakfastText.style.fontFamily = "'Roboto', sans-serif";
     breakfastContainer.appendChild(breakfastText);
     // creating Breakfast Option end
+
+    // creating Salad Option start
+    const saladContainer = document.createElement("div");
+    saladContainer.style.display = "flex";
+    saladContainer.style.flexDirection = "column";
+    saladContainer.style.alignItems = "center";
+    saladContainer.style.justifyContent = "center";
+    foodListContainer.appendChild(saladContainer);
+
+    const saladImage = document.createElement("img");
+    saladImage.src = "/images/salad.png";
+    saladImage.alt = "Salad Options";
+    saladImage.style.width = "80px";
+    saladImage.style.height = "80px";
+    saladContainer.appendChild(saladImage);
+
+    const saladText = document.createElement("p");
+    saladText.innerText = "Fresh-Made Salads";
+    saladText.style.fontSize = "16px";
+    saladText.style.fontFamily = "'Roboto', sans-serif";
+    saladContainer.appendChild(saladText);
   })();
 };
 mainPage();
