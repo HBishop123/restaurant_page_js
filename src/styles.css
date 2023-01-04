@@ -92,32 +92,32 @@ main {
   width: 60%;
 }
 
-.item-list-container{
-    grid-column: 1 / 3;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
+.item-list-container {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.food-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.food-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.food-option{
-    width: 80px;
-    height: 80px;
+.food-option {
+  width: 80px;
+  height: 80px;
 }
 
-#beverage{
-    width: 100px;
+#beverage {
+  width: 100px;
 }
 
-.text-one{
+.text-one {
   height: 100%;
   width: 100%;
   grid-column: 1 / 2;
@@ -125,15 +125,30 @@ main {
   background-color: white;
 }
 
-.image-one{
+.image-one {
   height: 100%;
   width: 100%;
-  grid-column: 2 / 3 ;
+  grid-column: 2 / 3;
   grid-row: 3 / 4;
   background-color: white;
 }
 
-.lower-images{
+.lower-images {
   width: 100%;
   height: 450px;
+}
+
+footer {
+  height: 60px;
+  background-color: #b0171f;
+}
+
+#contact {
+  padding-bottom: 10px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 220px;
+  list-style: none;
 }
