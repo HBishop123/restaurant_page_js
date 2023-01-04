@@ -23,7 +23,7 @@ const mainPage = function mainPage() {
     header.style.backgroundColor = "white";
     header.style.position = "sticky";
     header.style.top = "0";
-    document.allContent.appendChild(header);
+    allContent.appendChild(header);
   })();
 
   (function headerContent() {
@@ -38,7 +38,7 @@ const mainPage = function mainPage() {
       "/images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.webp";
     logoImage.style.height = "100px";
     logoImage.style.width = "auto";
-    document.header.appendChild(logoImage);
+    header.appendChild(logoImage);
 
     const navigation = document.createElement("nav");
     navigation.style.display = "flex";
@@ -52,7 +52,7 @@ const mainPage = function mainPage() {
     navigation.style.color = "white";
     navigation.style.fontWeight = "bold";
     navigation.style.fontFamily = "'Roboto,' sans-serif";
-    document.header.appendChild(navigation);
+    header.appendChild(navigation);
 
     const menuP = document.createElement("p");
     const companyP = document.createElement("p");
@@ -61,8 +61,8 @@ const mainPage = function mainPage() {
     companyP.textContent = "Company";
     jobsP.textContent = "Jobs";
 
-    document.navigation.appendChild(menuP);
-    document.navigation.appendChild(companyP);
-    document.navigation.appendChild(jobsP);
+    navigation.appendChild(menuP);
+    navigation.appendChild(companyP);
+    navigation.appendChild(jobsP);
   })();
 };
