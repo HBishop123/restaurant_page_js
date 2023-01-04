@@ -281,35 +281,35 @@ const mainPage = function mainPage() {
   (function createAndStyleLayerOne() {
     const mainSectionContainer = document.querySelector(".main-container");
     // creating the text box area for the text and header text
-    const textOne = document.createElement("div");
-    textOne.style.height = "100%";
-    textOne.style.width = "100%";
-    textOne.style.gridColumn = "1/2";
-    textOne.style.gridRow = "3/4";
-    textOne.style.backgroundColor = "white";
-    textOne.style.display = "flex";
-    textOne.style.justifyContent = "center";
-    textOne.style.flexDirection = "column";
-    textOne.style.gap = "10px";
-    textOne.style.paddingLeft = "13%";
-    mainSectionContainer.appendChild(textOne);
+    const textOneContainer = document.createElement("div");
+    textOneContainer.style.height = "100%";
+    textOneContainer.style.width = "100%";
+    textOneContainer.style.gridColumn = "1/2";
+    textOneContainer.style.gridRow = "3/4";
+    textOneContainer.style.backgroundColor = "white";
+    textOneContainer.style.display = "flex";
+    textOneContainer.style.justifyContent = "center";
+    textOneContainer.style.flexDirection = "column";
+    textOneContainer.style.gap = "10px";
+    textOneContainer.style.paddingLeft = "13%";
+    mainSectionContainer.appendChild(textOneContainer);
 
     const bigText = document.createElement("p");
-    bigText.innerText = "We're bringing the heat to the streets.";
+    bigText.innerText = "Proper Spicy Nuggs! All Fillet. No Filler";
     bigText.style.color = "red";
     bigText.style.fontWeight = "bold";
     bigText.style.fontSize = "50px";
     bigText.style.width = "70%";
     bigText.style.fontFamily = "'Asap', sans-serif";
-    textOne.appendChild(bigText);
+    textOneContainer.appendChild(bigText);
 
     const smallText = document.createElement("p");
     smallText.innerText =
-      "Fancy a burger that's freshly made, not pre-made? That was rehtorical... of course you do! We're now open! Find us all across the globe!";
+      "Our Spicy Chicken Nuggets are the standard bu which all other spicy nuggets are judged against. Many have tried and failed, but there's nothing like our verified, original Spicy Chicken Nuggets. They're legit!";
     smallText.style.width = "60%";
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
-    textOne.appendChild(smallText);
+    textOneContainer.appendChild(smallText);
     // creating the text box area for the text and header text END
 
     // creating the adjacent area for the image
@@ -328,6 +328,53 @@ const mainPage = function mainPage() {
     imageOne.style.height = "450px";
     imageOneContainer.appendChild(imageOne);
     // creating the adjacent area for the image END
+  })();
+
+  (function createAndStyleLayerTwo() {
+    const mainSectionContainer = document.querySelector(".main-container");
+    // creating the area for the image
+    const imageTwoContainer = document.createElement("div");
+    imageTwoContainer.style.height = "100%";
+    imageTwoContainer.style.width = "100%";
+    imageTwoContainer.style.backgroundColor = "white";
+    mainSectionContainer.appendChild(imageTwoContainer);
+
+    const imageTwo = document.createElement("img");
+    imageTwo.src = "/images/red-restaurant.png";
+    imageTwo.alt = "Image of our red restaurant";
+    imageTwo.style.width = "100%";
+    imageTwo.style.height = "450px";
+    imageTwoContainer.appendChild(imageTwo);
+    // creating the area for the image end
+
+    // creating the text box area for the text and header text
+    const textTwoContainer = document.createElement("div");
+    textTwoContainer.style.height = "100%";
+    textTwoContainer.style.width = "100%";
+    textTwoContainer.style.backgroundColor = "white";
+    textTwoContainer.style.display = "flex";
+    textTwoContainer.style.justifyContent = "center";
+    textTwoContainer.style.flexDirection = "column";
+    textTwoContainer.style.gap = "10px";
+    textTwoContainer.style.paddingLeft = "13%";
+    mainSectionContainer.appendChild(textTwoContainer);
+
+    const bigText = document.createElement("p");
+    bigText.innerText = "We're bringing the heat to the streets.";
+    bigText.style.color = "red";
+    bigText.style.fontWeight = "bold";
+    bigText.style.fontSize = "50px";
+    bigText.style.width = "70%";
+    bigText.style.fontFamily = "'Asap', sans-serif";
+    textTwoContainer.appendChild(bigText);
+
+    const smallText = document.createElement("p");
+    smallText.innerText =
+      "Fancy a burger that's freshly made, not pre-made? That was rehtorical... of course you do! We're now open! Find us all across the globe!";
+    smallText.style.width = "60%";
+    smallText.style.fontSize = "16px";
+    smallText.style.fontFamily = "'Roboto', sans-serif";
+    textTwoContainer.appendChild(smallText);
   })();
 };
 mainPage();
