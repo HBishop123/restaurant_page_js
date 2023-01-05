@@ -16,6 +16,7 @@ const companyPage = (function companyPage() {
     }
     body.style.height = "100%";
     body.style.width = "100%";
+    body.style.overflowX = "hidden";
     document.body.appendChild(allContent);
   })();
 
@@ -28,6 +29,8 @@ const companyPage = (function companyPage() {
     header.style.backgroundColor = "white";
     header.style.position = "sticky";
     header.style.top = "0";
+    header.style.width = "100%";
+    header.style.zIndex = "2";
     allContent.appendChild(header);
   })();
 
@@ -106,12 +109,13 @@ const companyPage = (function companyPage() {
     bigSentence.innerText = "WE'RE A FOOD KIND OF COMPANY";
     bigSentence.style.color = "white";
     bigSentence.style.fontSize = "60px";
-    bigSentence.style.paddingLeft = "750px";
-    bigSentence.style.width = "1500px";
+    bigSentence.style.paddingLeft = "780px";
+    bigSentence.style.margin = "0px";
+    bigSentence.style.width = "1000px";
     bigSentence.style.fontFamily = "'Asap', sans-serif;";
     bigSentence.style.fontWeight = "bold";
     bigSentence.style.position = "absolute";
-    bigSentence.style.top = "10";
+    bigSentence.style.top = "1";
     mainImageContainer.appendChild(bigSentence);
   })();
   // function to create the second section of the page
@@ -141,17 +145,19 @@ const companyPage = (function companyPage() {
       "At our Restaurant, we're all about serving up fresh food, even if it means going the extra mile. When you walk through our doors, we do what we can to make everyone feel at home because our family extends through your community.";
     whatWeDoDescription.style.alignSelf = "center";
     whatWeDoDescription.style.width = "750px";
-    whatWeDoDescription.style.paddingRight = "200px";
+    whatWeDoDescription.style.paddingRight = "100px";
     whatWeDoDescription.style.fontSize = "30px";
     whatWeDoDescription.style.color = "white";
     whatWeDoDescription.style.fontFamily = "'Roboto', sans-serif";
     whatWeDoContainer.appendChild(whatWeDoDescription);
   })();
+
   // function to create the thid section of my page
   (function thirdSection() {
     const mainSectionContainer = document.querySelector(".main-container");
     const meetTheBoardContainer = document.createElement("div");
     meetTheBoardContainer.style.height = "556px";
+    meetTheBoardContainer.style.width = "1500px";
     meetTheBoardContainer.style.backgroundColor = "#b0171f";
     meetTheBoardContainer.style.transform = "translateY(-28%)";
     meetTheBoardContainer.style.display = "flex";
@@ -173,7 +179,8 @@ const companyPage = (function companyPage() {
     leadershipText.style.fontFamily = "'Roboto', sans-serif";
     leadershipText.style.fontWeight = "bold";
     leadershipText.style.paddingTop = "100px";
-    leadershipText.style.paddingLeft = "200px";
+    leadershipText.style.paddingLeft = "100px";
+    leadershipText.style.margin = "0px";
     leftSide.appendChild(leadershipText);
 
     // second text element on left side
@@ -182,8 +189,9 @@ const companyPage = (function companyPage() {
     qualitySentence.style.fontSize = "60px";
     qualitySentence.style.color = "white";
     qualitySentence.style.width = "900px";
-    qualitySentence.style.paddingLeft = "200px";
+    qualitySentence.style.paddingLeft = "100px";
     qualitySentence.style.fontFamily = "'Asap', sans-serif;";
+    qualitySentence.style.margin = "0px";
     leftSide.appendChild(qualitySentence);
 
     // third text element on the left side
@@ -193,8 +201,9 @@ const companyPage = (function companyPage() {
     smallerText.style.fontFamily = "'Roboto', sans-serif";
     smallerText.style.color = "white";
     smallerText.style.width = "600px";
-    smallerText.style.paddingLeft = "200px";
+    smallerText.style.paddingLeft = "100px";
     smallerText.style.fontSize = "24px";
+    smallerText.style.margin = "0px";
     leftSide.appendChild(smallerText);
 
     // creating div for the right side of the container
@@ -202,6 +211,8 @@ const companyPage = (function companyPage() {
     rightSide.style.display = "flex";
     rightSide.style.alignItems = "center";
     rightSide.style.gap = "50px";
+    rightSide.style.paddingTop = "50px";
+
     meetTheBoardContainer.appendChild(rightSide);
 
     // creating the buttons for the right side
