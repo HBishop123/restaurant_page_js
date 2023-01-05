@@ -18,6 +18,7 @@ header {
   background-color: white;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 #restaurant-logo {
@@ -42,3 +43,45 @@ nav {
 }
 /* styling of header END */
 
+/* styling of main START */
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.main-container {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 750px 400px 500px;
+}
+
+.main-image-container {
+  grid-row: 1/2;
+}
+
+#background-food {
+  width: 1500px;
+  height: auto;
+  clip-path: inset(40% 0 0 0);
+  transform: translatey(-40%);
+  position: absolute;
+}
+
+h1 {
+  z-index: 1;
+  color: white;
+  font-size: 60px;
+  padding-left: 750px;
+  font-family: "asap" sans-serif;
+  position: absolute;
+  font-weight: bold;
+}
+
+.what-we-do-container {
+  grid-row: 2/3;
+  width: 1500px;
+  height: 400px;
+  background-color: grey;
+}
