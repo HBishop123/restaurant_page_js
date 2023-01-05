@@ -40,7 +40,7 @@ const mainPage = (function mainPage() {
 
     const logoImage = document.createElement("img");
     logoImage.alt = "Restaurant Logo";
-    logoImage.src = `./src/images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.web`;
+    logoImage.src = `./images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.web`;
     logoImage.style.height = "100px";
     logoImage.style.width = "auto";
     header.appendChild(logoImage);
@@ -97,7 +97,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(mainContainerImage);
 
     const burgerImage = document.createElement("img");
-    burgerImage.src = `./src/images/burger.png`;
+    burgerImage.src = `./images/burger.png`;
     burgerImage.alt = "A Beautiful Burger";
     burgerImage.style.height = "300px";
     burgerImage.style.width = "auto";
@@ -155,7 +155,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(veggieContainer);
 
     const veggieImage = document.createElement("img");
-    veggieImage.src = `./src/images/veggie.png`;
+    veggieImage.src = `./images/veggie.png`;
     veggieImage.alt = "Veggie Burger";
     veggieImage.style.width = "80px";
     veggieImage.style.height = "80px";
@@ -178,7 +178,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(breakfastContainer);
 
     const breakfastImage = document.createElement("img");
-    breakfastImage.src = `./src/images/brekfast.png`;
+    breakfastImage.src = `./images/brekfast.png`;
     breakfastImage.alt = "Breakfast Burger Options";
     breakfastImage.style.width = "80px";
     breakfastImage.style.height = "80px";
@@ -201,7 +201,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(saladContainer);
 
     const saladImage = document.createElement("img");
-    saladImage.src = `./src/images/salad.png`;
+    saladImage.src = `./images/salad.png`;
     saladImage.alt = "Salad Options";
     saladImage.style.width = "80px";
     saladImage.style.height = "80px";
@@ -224,7 +224,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(sandwichContainer);
 
     const sandwichImage = document.createElement("img");
-    sandwichImage.src = `./src/images/sandwich.png`;
+    sandwichImage.src = `./images/sandwich.png`;
     sandwichImage.alt = "Sandwich Options";
     sandwichImage.style.width = "80px";
     sandwichImage.style.height = "80px";
@@ -247,7 +247,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(sidesContainer);
 
     const sidesImage = document.createElement("img");
-    sidesImage.src = `./src/images/fries.png`;
+    sidesImage.src = `./images/fries.png`;
     sidesImage.alt = "Side Options";
     sidesImage.style.width = "80px";
     sidesImage.style.height = "80px";
@@ -270,7 +270,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(beverageContainer);
 
     const beverageImage = document.createElement("img");
-    beverageImage.src = `./src/images/drink.png`;
+    beverageImage.src = `./images/drink.png`;
     beverageImage.alt = "Drink Options";
     beverageImage.style.width = "100px";
     beverageImage.style.height = "80px";
@@ -331,7 +331,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(imageOneContainer);
 
     const imageOne = document.createElement("img");
-    imageOne.src = `./src/images/chicken.png`;
+    imageOne.src = `./images/chicken.png`;
     imageOne.alt = "Spicy Chicken Nuggets";
     imageOne.style.width = "100%";
     imageOne.style.height = "450px";
@@ -349,7 +349,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(imageTwoContainer);
 
     const imageTwo = document.createElement("img");
-    imageTwo.src = `./src/images/red-restaurant.png`;
+    imageTwo.src = `./images/red-restaurant.png`;
     imageTwo.alt = "Image of our red restaurant";
     imageTwo.style.width = "100%";
     imageTwo.style.height = "450px";
@@ -459,7 +459,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(imageThreeContainer);
 
     const imageThree = document.createElement("img");
-    imageThree.src = `./src/images/happy-staff.png`;
+    imageThree.src = `./images/happy-staff.png`;
     imageThree.alt = "picture of happy staff";
     imageThree.style.width = "100%";
     imageThree.style.height = "450px";
