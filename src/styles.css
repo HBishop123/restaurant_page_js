@@ -8,6 +8,7 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* styling of header start*/
@@ -19,6 +20,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+  width: 100%;
 }
 
 #restaurant-logo {
@@ -55,7 +57,6 @@ main {
   margin: auto;
   display: grid;
   grid-template-rows: 750px 300px 400px;
-  overflow: hidden;
 }
 
 .main-image-container {
@@ -67,18 +68,19 @@ main {
   height: auto;
   clip-path: inset(40% 0 0 0);
   transform: translatey(-40%);
+  z-index: 0;
   position: absolute;
 }
 
 h1 {
-  z-index: 1;
   color: white;
   font-size: 60px;
   padding-left: 750px;
   width: 1500px;
   font-family: "Asap", sans-serif;
-  position: absolute;
   font-weight: bold;
+  position: absolute;
+  top: 10;
 }
 
 .what-we-do-container {
