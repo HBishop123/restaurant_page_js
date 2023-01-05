@@ -1,5 +1,5 @@
 // function to create page
-const companyPage = (function companyPage() {
+const companyPage = function companyPage() {
   // Div that all content will be placed under
   const allContent = document.getElementById("content");
 
@@ -301,4 +301,6 @@ const companyPage = (function companyPage() {
     tax.style.fontWeight = "bold";
     list.appendChild(tax);
   })();
-})();
+};
+
+export default companyPage;

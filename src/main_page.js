@@ -1,5 +1,5 @@
 // function to create page
-const mainPage = (function mainPage() {
+const mainPage = function mainPage() {
   // Div that all content will be placed under
   const allContent = document.getElementById("content");
 
@@ -528,6 +528,6 @@ const mainPage = (function mainPage() {
     tax.style.fontWeight = "bold";
     list.appendChild(tax);
   })();
-})();
+};
 
 export default mainPage;
