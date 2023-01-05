@@ -40,7 +40,7 @@ const mainPage = (function mainPage() {
 
     const logoImage = document.createElement("img");
     logoImage.alt = "Restaurant Logo";
-    logoImage.src = `./images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.web`;
+    logoImage.src = `./images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.png`;
     logoImage.style.height = "100px";
     logoImage.style.width = "auto";
     header.appendChild(logoImage);
