@@ -41,7 +41,7 @@ const mainPage = (function mainPage() {
     const logoImage = document.createElement("img");
     logoImage.alt = "Restaurant Logo";
     logoImage.src =
-      "/images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.webp";
+      "images/red-kitchen-chef-design-logo-template-chef-restaurant-logo-stock-illustrations-free-vector.webp";
     logoImage.style.height = "100px";
     logoImage.style.width = "auto";
     header.appendChild(logoImage);
@@ -98,7 +98,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(mainContainerImage);
 
     const burgerImage = document.createElement("img");
-    burgerImage.src = "/images/burger.png";
+    burgerImage.src = "images/burger.png";
     burgerImage.alt = "A Beautiful Burger";
     burgerImage.style.height = "300px";
     burgerImage.style.width = "auto";
@@ -156,7 +156,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(veggieContainer);
 
     const veggieImage = document.createElement("img");
-    veggieImage.src = "/images/veggie.png";
+    veggieImage.src = "images/veggie.png";
     veggieImage.alt = "Veggie Burger";
     veggieImage.style.width = "80px";
     veggieImage.style.height = "80px";
@@ -179,7 +179,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(breakfastContainer);
 
     const breakfastImage = document.createElement("img");
-    breakfastImage.src = "/images/brekfast.png";
+    breakfastImage.src = "images/brekfast.png";
     breakfastImage.alt = "Breakfast Burger Options";
     breakfastImage.style.width = "80px";
     breakfastImage.style.height = "80px";
@@ -202,7 +202,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(saladContainer);
 
     const saladImage = document.createElement("img");
-    saladImage.src = "/images/salad.png";
+    saladImage.src = "images/salad.png";
     saladImage.alt = "Salad Options";
     saladImage.style.width = "80px";
     saladImage.style.height = "80px";
@@ -225,7 +225,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(sandwichContainer);
 
     const sandwichImage = document.createElement("img");
-    sandwichImage.src = "/images/sandwich.png";
+    sandwichImage.src = "images/sandwich.png";
     sandwichImage.alt = "Sandwich Options";
     sandwichImage.style.width = "80px";
     sandwichImage.style.height = "80px";
@@ -248,7 +248,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(sidesContainer);
 
     const sidesImage = document.createElement("img");
-    sidesImage.src = "/images/fries.png";
+    sidesImage.src = "images/fries.png";
     sidesImage.alt = "Side Options";
     sidesImage.style.width = "80px";
     sidesImage.style.height = "80px";
@@ -271,7 +271,7 @@ const mainPage = (function mainPage() {
     foodListContainer.appendChild(beverageContainer);
 
     const beverageImage = document.createElement("img");
-    beverageImage.src = "/images/drink.png";
+    beverageImage.src = "images/drink.png";
     beverageImage.alt = "Drink Options";
     beverageImage.style.width = "100px";
     beverageImage.style.height = "80px";
@@ -332,7 +332,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(imageOneContainer);
 
     const imageOne = document.createElement("img");
-    imageOne.src = "/images/chicken.png";
+    imageOne.src = "images/chicken.png";
     imageOne.alt = "Spicy Chicken Nuggets";
     imageOne.style.width = "100%";
     imageOne.style.height = "450px";
@@ -350,7 +350,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(imageTwoContainer);
 
     const imageTwo = document.createElement("img");
-    imageTwo.src = "/images/red-restaurant.png";
+    imageTwo.src = "images/red-restaurant.png";
     imageTwo.alt = "Image of our red restaurant";
     imageTwo.style.width = "100%";
     imageTwo.style.height = "450px";
@@ -402,7 +402,7 @@ const mainPage = (function mainPage() {
     textThreeContainer.style.justifyContent = "center";
     textThreeContainer.style.flexDirection = "column";
     textThreeContainer.style.paddingLeft = "13%";
-    textThreeContainer.style.gap = "30px"
+    textThreeContainer.style.gap = "30px";
     mainSectionContainer.appendChild(textThreeContainer);
 
     const bigText = document.createElement("p");
@@ -460,7 +460,7 @@ const mainPage = (function mainPage() {
     mainSectionContainer.appendChild(imageThreeContainer);
 
     const imageThree = document.createElement("img");
-    imageThree.src = "/images/happy-staff.png";
+    imageThree.src = "images/happy-staff.png";
     imageThree.alt = "picture of happy staff";
     imageThree.style.width = "100%";
     imageThree.style.height = "450px";
@@ -476,8 +476,8 @@ const mainPage = (function mainPage() {
     footer.style.backgroundColor = "#b0171f";
     footer.style.margin = "0px";
     footer.style.padding = "0px";
-    footer.style.display = "flex"
-    footer.style.flexDirection = "column"
+    footer.style.display = "flex";
+    footer.style.flexDirection = "column";
     body.appendChild(footer);
 
     // creating & styling contact 'p'
@@ -486,11 +486,11 @@ const mainPage = (function mainPage() {
     contact.style.fontFamily = "Roboto, sans-serif";
     contact.style.paddingLeft = "5px";
     contact.style.margin = "0px";
-    contact.style.alignSelf = "center"
-    contact.style.margin = "2.5px 0px 2.5px 0px"
-    contact.style.fontWeight = "bold"
-    contact.style.fontSize = "1.1rem"
-    
+    contact.style.alignSelf = "center";
+    contact.style.margin = "2.5px 0px 2.5px 0px";
+    contact.style.fontWeight = "bold";
+    contact.style.fontSize = "1.1rem";
+
     footer.appendChild(contact);
 
     // creating and styling ul of footer links
@@ -508,25 +508,25 @@ const mainPage = (function mainPage() {
     const cookies = document.createElement("li");
     cookies.innerText = "Cookies and Tracking";
     cookies.style.fontFamily = "'Roboto', sans-serif";
-    cookies.style.fontWeight = "bold"
+    cookies.style.fontWeight = "bold";
     list.appendChild(cookies);
 
     const privacyPolicy = document.createElement("li");
     privacyPolicy.innerText = "Privacy Policy";
     privacyPolicy.style.fontFamily = "'Roboto', sans-serif";
-    privacyPolicy.style.fontWeight = "bold"
+    privacyPolicy.style.fontWeight = "bold";
     list.appendChild(privacyPolicy);
 
     const managePrivacy = document.createElement("li");
     managePrivacy.innerText = "Manage Privacy Preferences";
     managePrivacy.style.fontFamily = "'Roboto', sans-serif";
-    managePrivacy.style.fontWeight = "bold"
+    managePrivacy.style.fontWeight = "bold";
     list.appendChild(managePrivacy);
 
     const tax = document.createElement("li");
     tax.innerText = "Tax Strategy";
     tax.style.fontFamily = "'Roboto', sans-serif";
-    tax.style.fontWeight = "bold"
+    tax.style.fontWeight = "bold";
     list.appendChild(tax);
   })();
 })();
