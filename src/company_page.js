@@ -1,7 +1,8 @@
 // function to create page
 const companyPage = function companyPage() {
   // Div that all content will be placed under
-  const allContent = document.getElementById("content");
+  const allContent2 = document.getElementById("content2");
+  
 
   (() => {
     // function to style both the body and *
@@ -17,7 +18,7 @@ const companyPage = function companyPage() {
     body.style.height = "100%";
     body.style.width = "100%";
     body.style.overflowX = "hidden";
-    document.body.appendChild(allContent);
+    document.body.appendChild(allContent2);
   })();
 
   // function that creates the pages header
@@ -31,7 +32,7 @@ const companyPage = function companyPage() {
     header.style.top = "0";
     header.style.width = "100%";
     header.style.zIndex = "2";
-    allContent.appendChild(header);
+    allContent2.appendChild(header);
   })();
 
   // function that creates and appends content for the header
@@ -67,6 +68,7 @@ const companyPage = function companyPage() {
     const jobsP = document.createElement("p");
     menuP.textContent = "Menu";
     companyP.textContent = "Company";
+    companyP.id = "company";
     jobsP.textContent = "Jobs";
 
     navigation.appendChild(menuP);
@@ -80,7 +82,7 @@ const companyPage = function companyPage() {
     mainSection.style.width = "100%";
     mainSection.style.height = "100%";
     mainSection.style.backgroundColor = "rgb(240, 240, 240)";
-    allContent.appendChild(mainSection);
+    allContent2.appendChild(mainSection);
 
     const mainSectionContainer = document.createElement("div");
     mainSectionContainer.className = "main-container";
@@ -240,8 +242,7 @@ const companyPage = function companyPage() {
   })();
 
   (function createAndStyleFooter() {
-    // creating & styling footer
-    const body = document.querySelector("body");
+    // creating & styling footer 
     const footer = document.createElement("footer");
     footer.style.height = "50px";
     footer.style.backgroundColor = "black";
@@ -250,7 +251,7 @@ const companyPage = function companyPage() {
     footer.style.display = "flex";
     footer.style.flexDirection = "column";
     footer.style.color = "white";
-    body.appendChild(footer);
+    allContent2.appendChild(footer);
 
     // creating & styling contact 'p'
     const contact = document.createElement("p");

@@ -1,7 +1,8 @@
 // function to create page
 const mainPage = function mainPage() {
   // Div that all content will be placed under
-  const allContent = document.getElementById("content");
+  const allContent1 = document.getElementById("content1");
+  
 
   (() => {
     // function to style both the body and *
@@ -16,7 +17,7 @@ const mainPage = function mainPage() {
     }
     body.style.height = "100%";
     body.style.width = "100%";
-    document.body.appendChild(allContent);
+    document.body.appendChild(allContent1);
   })();
 
   // function that creates the pages header
@@ -28,7 +29,7 @@ const mainPage = function mainPage() {
     header.style.backgroundColor = "white";
     header.style.position = "sticky";
     header.style.top = "0";
-    allContent.appendChild(header);
+    allContent1.appendChild(header);
   })();
 
   // function that creates and appends content for the header
@@ -64,6 +65,7 @@ const mainPage = function mainPage() {
     const jobsP = document.createElement("p");
     menuP.textContent = "Menu";
     companyP.textContent = "Company";
+    companyP.id = "company";
     jobsP.textContent = "Jobs";
 
     navigation.appendChild(menuP);
@@ -77,7 +79,7 @@ const mainPage = function mainPage() {
     mainSection.style.width = "100%";
     mainSection.style.height = "100%";
     mainSection.style.backgroundColor = "rgb(240, 240, 240)";
-    allContent.appendChild(mainSection);
+    allContent1.appendChild(mainSection);
 
     const mainSectionContainer = document.createElement("div");
     mainSectionContainer.className = "main-container";
@@ -469,7 +471,6 @@ const mainPage = function mainPage() {
 
   (function createAndStyleFooter() {
     // creating & styling footer
-    const body = document.querySelector("body");
     const footer = document.createElement("footer");
     footer.style.height = "50px";
     footer.style.backgroundColor = "#b0171f";
@@ -477,7 +478,7 @@ const mainPage = function mainPage() {
     footer.style.padding = "0px";
     footer.style.display = "flex";
     footer.style.flexDirection = "column";
-    body.appendChild(footer);
+    allContent1.appendChild(footer);
 
     // creating & styling contact 'p'
     const contact = document.createElement("p");
