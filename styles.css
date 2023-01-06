@@ -1,0 +1,11 @@
+#company:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  cursor: pointer;
+}
+
+#menu:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  cursor: pointer;
+}
