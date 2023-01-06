@@ -161,6 +161,7 @@ const mainPage = function mainPage() {
     veggieImage.alt = "Veggie Burger";
     veggieImage.style.width = "80px";
     veggieImage.style.height = "80px";
+    veggieImage.id = "veggie-image";
     veggieContainer.appendChild(veggieImage);
 
     const veggieText = document.createElement("p");
@@ -184,6 +185,7 @@ const mainPage = function mainPage() {
     breakfastImage.alt = "Breakfast Burger Options";
     breakfastImage.style.width = "80px";
     breakfastImage.style.height = "80px";
+    breakfastImage.id = "breakfast-image";
     breakfastContainer.appendChild(breakfastImage);
 
     const breakfastText = document.createElement("p");
@@ -207,6 +209,7 @@ const mainPage = function mainPage() {
     saladImage.alt = "Salad Options";
     saladImage.style.width = "80px";
     saladImage.style.height = "80px";
+    saladImage.id = "salad-image";
     saladContainer.appendChild(saladImage);
 
     const saladText = document.createElement("p");
@@ -230,6 +233,7 @@ const mainPage = function mainPage() {
     sandwichImage.alt = "Sandwich Options";
     sandwichImage.style.width = "80px";
     sandwichImage.style.height = "80px";
+    sandwichImage.id = "sandwich-image";
     sandwichContainer.appendChild(sandwichImage);
 
     const sandwichText = document.createElement("p");
@@ -253,6 +257,7 @@ const mainPage = function mainPage() {
     sidesImage.alt = "Side Options";
     sidesImage.style.width = "80px";
     sidesImage.style.height = "80px";
+    sidesImage.id = "sides-image";
     sidesContainer.appendChild(sidesImage);
 
     const sidesText = document.createElement("p");
@@ -276,6 +281,7 @@ const mainPage = function mainPage() {
     beverageImage.alt = "Drink Options";
     beverageImage.style.width = "100px";
     beverageImage.style.height = "80px";
+    breakfastImage.id = "beverage-image";
     beverageContainer.appendChild(beverageImage);
 
     const beverageText = document.createElement("p");
