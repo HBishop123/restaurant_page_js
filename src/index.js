@@ -36,7 +36,3 @@ document.addEventListener("click", (e) => {
 });
 
 
-
-showPages();
-
-
