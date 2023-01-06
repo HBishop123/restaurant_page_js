@@ -161,7 +161,7 @@ const mainPage = function mainPage() {
     veggieImage.alt = "Veggie Burger";
     veggieImage.style.width = "80px";
     veggieImage.style.height = "80px";
-    veggieImage.id = "veggie-image";
+    veggieImage.id = "veggieImage";
     veggieContainer.appendChild(veggieImage);
 
     const veggieText = document.createElement("p");
