@@ -315,7 +315,7 @@ const mainPage = function mainPage() {
 
     const smallText = document.createElement("p");
     smallText.innerText =
-      "Our Spicy Chicken Nuggets are the standard bu which all other spicy nuggets are judged against. Many have tried and failed, but there's nothing like our verified, original Spicy Chicken Nuggets. They're legit!";
+      "Our Spicy Chicken Nuggets are the standard by which all other spicy nuggets are judged against. Many have tried and failed, but there's nothing like our verified, original Spicy Chicken Nuggets. They're legit!";
     smallText.style.width = "60%";
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
@@ -382,7 +382,7 @@ const mainPage = function mainPage() {
 
     const smallText = document.createElement("p");
     smallText.innerText =
-      "Fancy a burger that's freshly made, not pre-made? That was rehtorical... of course you do! We're now open! Find us all across the globe!";
+      "Fancy a burger that's freshly made, not pre-made? That was rhetorical... ofcourse you do! We're now open! Find us all across the globe!";
     smallText.style.width = "60%";
     smallText.style.fontSize = "16px";
     smallText.style.fontFamily = "'Roboto', sans-serif";
