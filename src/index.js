@@ -5,6 +5,7 @@ let showMainPage = true;
 const contentOne = document.querySelector("#content1");
 const contentTwo = document.querySelector("#content2");
 
+// function that flicks between pages
 function showPages() {
   if (showMainPage) {
     contentOne.style.opactiy = "block";
@@ -19,6 +20,7 @@ function showPages() {
   }
 }
 
+// event listener that shows pages depening on the state of showMainPage
 document.addEventListener("click", (e) => {
   const target = e.target;
   if (target.id === "company") {
@@ -33,4 +35,8 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
+
 showPages();
+
+
