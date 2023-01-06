@@ -281,7 +281,7 @@ const mainPage = function mainPage() {
     beverageImage.alt = "Drink Options";
     beverageImage.style.width = "100px";
     beverageImage.style.height = "80px";
-    breakfastImage.id = "beverage-image";
+    beverageImage.id = "beverage-image";
     beverageContainer.appendChild(beverageImage);
 
     const beverageText = document.createElement("p");
