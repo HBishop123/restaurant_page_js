@@ -2,7 +2,6 @@
 const companyPage = function companyPage() {
   // Div that all content will be placed under
   const allContent2 = document.getElementById("content2");
-  
 
   (() => {
     // function to style both the body and *
@@ -67,6 +66,7 @@ const companyPage = function companyPage() {
     const companyP = document.createElement("p");
     const jobsP = document.createElement("p");
     menuP.textContent = "Menu";
+    menuP.id = "menu";
     companyP.textContent = "Company";
     companyP.id = "company";
     jobsP.textContent = "Jobs";
@@ -242,7 +242,7 @@ const companyPage = function companyPage() {
   })();
 
   (function createAndStyleFooter() {
-    // creating & styling footer 
+    // creating & styling footer
     const footer = document.createElement("footer");
     footer.style.height = "50px";
     footer.style.backgroundColor = "black";

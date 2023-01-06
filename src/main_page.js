@@ -2,7 +2,6 @@
 const mainPage = function mainPage() {
   // Div that all content will be placed under
   const allContent1 = document.getElementById("content1");
-  
 
   (() => {
     // function to style both the body and *
@@ -64,6 +63,7 @@ const mainPage = function mainPage() {
     const companyP = document.createElement("p");
     const jobsP = document.createElement("p");
     menuP.textContent = "Menu";
+    menuP.id = "menu";
     companyP.textContent = "Company";
     companyP.id = "company";
     jobsP.textContent = "Jobs";
