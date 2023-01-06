@@ -9,3 +9,12 @@
   text-decoration-color: white;
   cursor: pointer;
 }
+
+#veggie-image,
+#breakfast-image,
+#salad-image,
+#sandwich-image,
+#sides-image,
+#beverage-image {
+  cursor: pointer;
+}
